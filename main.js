@@ -621,7 +621,8 @@ document.querySelector("#app").innerHTML = `
             <h3>Connect</h3>
             <ul class="footer-links">
               <li><a href="https://wa.me/919553053852?text=Hey%20FiNix!%20I%20want%20to%20get%20a%20website%20designed%20for%20my%20coaching%20institute.%20Let%E2%80%99s%20get%20started." target="_blank">WhatsApp</a></li>
-              <li><a href="#" target="_blank">LinkedIn</a></li>
+              <li><a <a href="mailto:finix.digital.solution@gmail.com?subject=Interested%20in%20Web%20Development&body=Hey%20FiNix%2C%20I'm%20interested.%20Let's%20start!" 
+   target="_blank">Mail</a></li>
               <li><a href="#" target="_blank">Instagram</a></li>
               <li><a href="#" target="_blank">Facebook</a></li>
             </ul>
@@ -633,13 +634,14 @@ document.querySelector("#app").innerHTML = `
         <a href="https://wa.me/919553053852?text=Hey%20FiNix!%20I%20want%20to%20get%20a%20website%20designed%20for%20my%20coaching%20institute.%20Let%E2%80%99s%20get%20started." target="_blank" title="WhatsApp">
           <i class="fab fa-whatsapp"></i>
         </a>
-        <a href="https://linkedin.com/company/finix-digital" target="_blank" title="LinkedIn">
-          <i class="fab fa-linkedin"></i>
+        <a href="mailto:finix.digital.solution@gmail.com?subject=Interested%20in%20Web%20Development&body=Hey%20FiNix%2C%20I'm%20interested.%20Let's%20start!" 
+   target="_blank"  title="LinkedIn">
+          <i class="fas fa-envelope"></i>
         </a>
-        <a href="https://instagram.com/finix.digital" target="_blank" title="Instagram">
+        <a href="#" target="_blank" title="Instagram">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://facebook.com/finix.digital" target="_blank" title="Facebook">
+        <a href="#" target="_blank" title="Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </div>
