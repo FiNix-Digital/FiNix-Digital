@@ -1,6 +1,6 @@
 // FiNix Digital Solution Landing Page
 document.querySelector("#app").innerHTML = `
-  <!-- Mobile Sidebar Overlay -->
+ <!-- 
   <div class="sidebar-overlay" id="sidebarOverlay"></div>
   
   <!-- Mobile Sidebar -->
@@ -652,6 +652,7 @@ document.querySelector("#app").innerHTML = `
       </div>
     </div>
   </footer>
+  -->
 `;
 
 // JavaScript functionality
