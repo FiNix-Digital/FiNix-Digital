@@ -61,7 +61,7 @@ document.querySelector("#app").innerHTML = `
     </nav>
   </header>
 
-  <!-- Hero Section 
+  <!-- Hero Section -->
   <section class="hero section" id="home">
     <div class="container">
       <div class="row align-items-center">
@@ -88,7 +88,7 @@ document.querySelector("#app").innerHTML = `
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- Problem/Solution Section -->
   <section class="section section-alt" id="problems">
