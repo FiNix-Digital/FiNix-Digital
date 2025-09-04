@@ -235,7 +235,7 @@ document.querySelector("#app").innerHTML=`
               <i class="fas fa-rocket"></i>
             </div>
             <h3>Standard Plan</h3>
-            <div class="price">₹5,499</div>
+            <div class="price">₹5,999</div>
             <p class="description">For coaching centers that want better visibility</p>
             <ul class="pricing-features">
               <li><i class="fas fa-check"></i> 3-4 Page Website (Home, Courses, About, Contact)</li>
@@ -246,7 +246,7 @@ document.querySelector("#app").innerHTML=`
               <li><i class="fas fa-check"></i> Basic SEO(upto 65 score) + Google Search Console setup</li>
               <li><i class="fas fa-check"></i> Delivery in 7 working days</li>
             </ul>
-            <a href="https://wa.me/919553053852?text=I%20want%20the%20Standard%20Plan%20for%20₹5,499" 
+            <a href="https://wa.me/919553053852?text=I%20want%20the%20Standard%20Plan%20for%20₹5,999" 
                class="pricing-button" target="_blank">Choose Standard</a>
           </div>
         </div>
@@ -529,7 +529,7 @@ document.querySelector("#app").innerHTML=`
                 <select id="plan" name="plan">
                   <option value="">Select a plan</option>
                   <option value="starter">Starter Plan - ₹2,999</option>
-                  <option value="standard">Standard Plan - ₹5,499</option>
+                  <option value="standard">Standard Plan - ₹5,999</option>
                   <option value="premium">Premium Plan - ₹8,999</option>
                   <option value="custom">Custom Requirements</option>
                 </select>
@@ -666,7 +666,7 @@ setupContactForm(){const contactForm=document.getElementById("contactForm");cons
 submitBtn.disabled=!0;submitBtn.innerHTML='<i class="fas fa-spinner fa-spin"></i> Sending...';try{const whatsappMessage=this.createWhatsAppMessage(data);await new Promise((resolve)=>setTimeout(resolve,1500));Swal.fire({icon:"success",title:"Inquiry Sent Successfully!",text:"We will contact you within 12 hours. You can also reach us directly on WhatsApp.",confirmButtonColor:"#1e40af",showCancelButton:!0,confirmButtonText:"Open WhatsApp",cancelButtonText:"Close",}).then((result)=>{if(result.isConfirmed){console.log(whatsappMessage);window.open(`https://wa.me/919553053852?text=${encodeURIComponent(
                 whatsappMessage
               )}`,"_blank")}});contactForm.reset();this.sendEmailNotification(data)}catch(error){console.error("Error submitting form:",error);Swal.fire({icon:"error",title:"Submission Failed",text:"There was an error sending your inquiry. Please try again or contact us directly on WhatsApp.",confirmButtonColor:"#1e40af",})}finally{submitBtn.disabled=!1;submitBtn.innerHTML='<i class="fas fa-paper-plane"></i> Send Inquiry'}})}
-createWhatsAppMessage(data){let message=`Hi FiNix! I'm interested in getting a website for my coaching center.\n\n`;message+=`📚 Coaching Center: ${data.centerName}\n`;message+=`📱 Mobile: ${data.mobile}\n`;if(data.plan){const planNames={starter:"Starter Plan - ₹2,999",standard:"Standard Plan - ₹5,499",premium:"Premium Plan - ₹8,999",custom:"Custom Requirements",};message+=`💼 Preferred Plan: ${planNames[data.plan]}\n`}
+createWhatsAppMessage(data){let message=`Hi FiNix! I'm interested in getting a website for my coaching center.\n\n`;message+=`📚 Coaching Center: ${data.centerName}\n`;message+=`📱 Mobile: ${data.mobile}\n`;if(data.plan){const planNames={starter:"Starter Plan - ₹2,999",standard:"Standard Plan - ₹5,999",premium:"Premium Plan - ₹8,999",custom:"Custom Requirements",};message+=`💼 Preferred Plan: ${planNames[data.plan]}\n`}
 if(data.budget){const budgetNames={"under-3k":"Under ₹3,000","3k-5k":"₹3,000 - ₹5,000","5k-10k":"₹5,000 - ₹10,000","10k-plus":"₹10,000+",};message+=`💰 Budget: ${budgetNames[data.budget]}\n`}
 if(data.requirements){message+=`📝 Requirements: ${data.requirements}\n`}
 message+=`\nPlease provide me with more details and a quote. Thank you!`;return message}
@@ -684,3 +684,4 @@ sendEmailNotification(data){console.log("Email notification would be sent with d
 setupAnimations(){const cards=document.querySelectorAll(".service-card, .pricing-card, .portfolio-card, .problem-card");cards.forEach((card)=>{card.addEventListener("mouseenter",()=>{card.style.transform="translateY(-8px) scale(1.02)"});card.addEventListener("mouseleave",()=>{card.style.transform="translateY(0) scale(1)"})})}
 trackInteraction(action,element){console.log(`User interaction: ${action} on ${element}`)}}
 document.addEventListener("DOMContentLoaded",()=>{new FiNixLanding();const loadingElements=document.querySelectorAll(".hero-illustration, .service-card, .pricing-card");loadingElements.forEach((element)=>{element.classList.add("loading");setTimeout(()=>{element.classList.remove("loading")},1500)})});window.addEventListener("load",()=>{const images=document.querySelectorAll("img");images.forEach((img)=>{img.loading="lazy"})});window.addEventListener("error",(e)=>{console.error("FiNix Landing Page Error:",e.error)});window.FiNixLanding=FiNixLanding
+
