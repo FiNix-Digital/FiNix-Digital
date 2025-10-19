@@ -638,12 +638,12 @@ document.querySelector("#app").innerHTML=`
    target="_blank" title="LinkedIn">
           <i class="fas fa-envelope"></i>
         </a>
-        <a href="#" title="Instagram">
+        <a href="https://www.instagram.com/finixdigital?igsh=MTZkcTlpb3k4Y3Bjbg==" title="Instagram">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="#" title="Facebook">
+        <!--<a href="#" title="Facebook">
           <i class="fab fa-facebook"></i>
-        </a>
+        </a>-->
       </div>
       
       <div class="footer-bottom">
@@ -684,4 +684,5 @@ sendEmailNotification(data){console.log("Email notification would be sent with d
 setupAnimations(){const cards=document.querySelectorAll(".service-card, .pricing-card, .portfolio-card, .problem-card");cards.forEach((card)=>{card.addEventListener("mouseenter",()=>{card.style.transform="translateY(-8px) scale(1.02)"});card.addEventListener("mouseleave",()=>{card.style.transform="translateY(0) scale(1)"})})}
 trackInteraction(action,element){console.log(`User interaction: ${action} on ${element}`)}}
 document.addEventListener("DOMContentLoaded",()=>{new FiNixLanding();const loadingElements=document.querySelectorAll(".hero-illustration, .service-card, .pricing-card");loadingElements.forEach((element)=>{element.classList.add("loading");setTimeout(()=>{element.classList.remove("loading")},1500)})});window.addEventListener("load",()=>{const images=document.querySelectorAll("img");images.forEach((img)=>{img.loading="lazy"})});window.addEventListener("error",(e)=>{console.error("FiNix Landing Page Error:",e.error)});window.FiNixLanding=FiNixLanding
+
 
