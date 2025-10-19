@@ -623,8 +623,8 @@ document.querySelector("#app").innerHTML=`
               <li><a href="https://wa.me/919553053852?text=Hey%20FiNix!%20I%20want%20to%20get%20a%20website%20designed%20for%20my%20coaching%20institute.%20Let%E2%80%99s%20get%20started." target="_blank">WhatsApp</a></li>
               <li><a href="mailto:finix.digital.solution@gmail.com?subject=I%20Need%20a%20Website%20for%20My%20Coaching%20Institute&body=Hi%20FiNix%2C%0A%0AI%E2%80%99m%20interested%20in%20getting%20a%20professional%20website%20designed%20for%20my%20coaching%20center.%20Please%20share%20the%20packages%20and%20next%20steps.%0A%0AThanks%2C%0A%5BYour%20Name%5D" 
    target="_blank">Mail</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Facebook</a></li>
+              <li><a href="https://www.instagram.com/finixdigital?igsh=MTZkcTlpb3k4Y3Bjbg==">Instagram</a></li>
+              <!--<li><a href="">Facebook</a></li>-->
             </ul>
           </div>
         </div>
@@ -684,5 +684,6 @@ sendEmailNotification(data){console.log("Email notification would be sent with d
 setupAnimations(){const cards=document.querySelectorAll(".service-card, .pricing-card, .portfolio-card, .problem-card");cards.forEach((card)=>{card.addEventListener("mouseenter",()=>{card.style.transform="translateY(-8px) scale(1.02)"});card.addEventListener("mouseleave",()=>{card.style.transform="translateY(0) scale(1)"})})}
 trackInteraction(action,element){console.log(`User interaction: ${action} on ${element}`)}}
 document.addEventListener("DOMContentLoaded",()=>{new FiNixLanding();const loadingElements=document.querySelectorAll(".hero-illustration, .service-card, .pricing-card");loadingElements.forEach((element)=>{element.classList.add("loading");setTimeout(()=>{element.classList.remove("loading")},1500)})});window.addEventListener("load",()=>{const images=document.querySelectorAll("img");images.forEach((img)=>{img.loading="lazy"})});window.addEventListener("error",(e)=>{console.error("FiNix Landing Page Error:",e.error)});window.FiNixLanding=FiNixLanding
+
 
 
