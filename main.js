@@ -214,7 +214,7 @@ document.querySelector("#app").innerHTML=`
               <i class="fas fa-briefcase"></i>
             </div>
             <h3>Starter Plan</h3>
-            <div class="price">₹2,999</div>
+            <div class="price"></div>
             <p class="description">Perfect for new/small coaching centers</p>
             <ul class="pricing-features">
               <li><i class="fas fa-check"></i> 2-3 Page Mobile-Friendly Website</li>
@@ -224,7 +224,7 @@ document.querySelector("#app").innerHTML=`
               <li><i class="fas fa-check"></i> Basic SEO setup</li>
               <li><i class="fas fa-check"></i> Delivery in 5 working days</li>
             </ul>
-            <a href="https://wa.me/919553053852?text=I%20want%20the%20Starter%20Plan%20for%20₹2,999" 
+            <a href="https://wa.me/919553053852?text=I%20want%20the%20Starter%20Plan%20" 
                class="pricing-button" target="_blank">Choose Starter</a>
           </div>
         </div>
@@ -235,7 +235,7 @@ document.querySelector("#app").innerHTML=`
               <i class="fas fa-rocket"></i>
             </div>
             <h3>Standard Plan</h3>
-            <div class="price">₹5,999</div>
+            <div class="price"></div>
             <p class="description">For coaching centers that want better visibility</p>
             <ul class="pricing-features">
               <li><i class="fas fa-check"></i> 3-4 Page Website (Home, Courses, About, Contact)</li>
@@ -246,7 +246,7 @@ document.querySelector("#app").innerHTML=`
               <li><i class="fas fa-check"></i> Basic SEO(upto 65 score) + Google Search Console setup</li>
               <li><i class="fas fa-check"></i> Delivery in 7 working days</li>
             </ul>
-            <a href="https://wa.me/919553053852?text=I%20want%20the%20Standard%20Plan%20for%20₹5,999" 
+            <a href="https://wa.me/919553053852?text=I%20want%20the%20Standard%20Plan%20" 
                class="pricing-button" target="_blank">Choose Standard</a>
           </div>
         </div>
@@ -257,7 +257,7 @@ document.querySelector("#app").innerHTML=`
               <i class="fas fa-crown"></i>
             </div>
             <h3>Premium Plan</h3>
-            <div class="price">₹8,999</div>
+            <div class="price"></div>
             <p class="description">For institutes serious about digital growth</p>
             <ul class="pricing-features">
               <li><i class="fas fa-check"></i> 5-6 Page Website (View Demo below)</li>
@@ -268,7 +268,7 @@ document.querySelector("#app").innerHTML=`
               <li><i class="fas fa-check"></i> SEO(upto 80 score) + FiNix mail(for fast support) + Google Search Console Setup</li>
               <li><i class="fas fa-check"></i> Delivery in 10-12 working days</li>
             </ul>
-            <a href="https://wa.me/919553053852?text=I%20want%20the%20Premium%20Plan%20for%20₹8,999" 
+            <a href="https://wa.me/919553053852?text=I%20want%20the%20Premium%20Plan%20" 
                class="pricing-button" target="_blank">Choose Premium</a>
           </div>
         </div>
@@ -528,9 +528,9 @@ document.querySelector("#app").innerHTML=`
                 <label for="plan">Preferred Plan</label>
                 <select id="plan" name="plan">
                   <option value="">Select a plan</option>
-                  <option value="starter">Starter Plan - ₹2,999</option>
-                  <option value="standard">Standard Plan - ₹5,999</option>
-                  <option value="premium">Premium Plan - ₹8,999</option>
+                  <option value="starter">Starter Plan</option>
+                  <option value="standard">Standard Plan</option>
+                  <option value="premium">Premium Plan</option>
                   <option value="custom">Custom Requirements</option>
                 </select>
               </div>
@@ -684,6 +684,7 @@ sendEmailNotification(data){console.log("Email notification would be sent with d
 setupAnimations(){const cards=document.querySelectorAll(".service-card, .pricing-card, .portfolio-card, .problem-card");cards.forEach((card)=>{card.addEventListener("mouseenter",()=>{card.style.transform="translateY(-8px) scale(1.02)"});card.addEventListener("mouseleave",()=>{card.style.transform="translateY(0) scale(1)"})})}
 trackInteraction(action,element){console.log(`User interaction: ${action} on ${element}`)}}
 document.addEventListener("DOMContentLoaded",()=>{new FiNixLanding();const loadingElements=document.querySelectorAll(".hero-illustration, .service-card, .pricing-card");loadingElements.forEach((element)=>{element.classList.add("loading");setTimeout(()=>{element.classList.remove("loading")},1500)})});window.addEventListener("load",()=>{const images=document.querySelectorAll("img");images.forEach((img)=>{img.loading="lazy"})});window.addEventListener("error",(e)=>{console.error("FiNix Landing Page Error:",e.error)});window.FiNixLanding=FiNixLanding
+
 
 
 
