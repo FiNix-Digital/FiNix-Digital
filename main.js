@@ -540,10 +540,10 @@ document.querySelector("#app").innerHTML=`
                 <label for="budget">Budget Range</label>
                 <select id="budget" name="budget">
                   <option value="">Select budget range</option>
-                  <option value="under-3k"></option>
-                  <option value="3k-5k">₹10,000 - ₹30,000</option>
-                  <option value="5k-10k">₹50,000 - ₹80,000</option>
-                  <option value="10k-plus">₹1,00,000+</option>
+                  
+                  <option value="10k-30k">₹10,000 - ₹30,000</option>
+                  <option value="50k-80k">₹50,000 - ₹80,000</option>
+                  <option value="100k-plus">₹1,00,000+</option>
                 </select>
               </div>
             </div>
@@ -684,6 +684,7 @@ sendEmailNotification(data){console.log("Email notification would be sent with d
 setupAnimations(){const cards=document.querySelectorAll(".service-card, .pricing-card, .portfolio-card, .problem-card");cards.forEach((card)=>{card.addEventListener("mouseenter",()=>{card.style.transform="translateY(-8px) scale(1.02)"});card.addEventListener("mouseleave",()=>{card.style.transform="translateY(0) scale(1)"})})}
 trackInteraction(action,element){console.log(`User interaction: ${action} on ${element}`)}}
 document.addEventListener("DOMContentLoaded",()=>{new FiNixLanding();const loadingElements=document.querySelectorAll(".hero-illustration, .service-card, .pricing-card");loadingElements.forEach((element)=>{element.classList.add("loading");setTimeout(()=>{element.classList.remove("loading")},1500)})});window.addEventListener("load",()=>{const images=document.querySelectorAll("img");images.forEach((img)=>{img.loading="lazy"})});window.addEventListener("error",(e)=>{console.error("FiNix Landing Page Error:",e.error)});window.FiNixLanding=FiNixLanding
+
 
 
 
